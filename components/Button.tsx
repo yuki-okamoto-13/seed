@@ -7,7 +7,7 @@ type Props = {
   onPress?: () => void;
 };
 
-export default function Button({ label, theme, onPress }: Props) {
+const Button = ({ label, theme, onPress }: Props) => {
   if (theme === "primary") {
     return (
       <View
@@ -71,3 +71,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
+export default Button;

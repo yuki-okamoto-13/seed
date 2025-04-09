@@ -7,7 +7,7 @@ type Props = {
   onCloseModal: () => void;
 };
 
-export default function EmojiList({ onSelect, onCloseModal }: Props) {
+const EmojiList = ({ onSelect, onCloseModal }: Props) => {
   const [emoji] = useState<ImageSource[]>([
     require("../assets/images/emoji1.png"),
     require("../assets/images/emoji2.png"),
@@ -49,3 +49,5 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
 });
+
+export default EmojiList;

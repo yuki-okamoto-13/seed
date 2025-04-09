@@ -11,7 +11,7 @@ type Props = {
   stickerSource: ImageSource;
 };
 
-export default function EmojiSticker({ imageSize, stickerSource }: Props) {
+const EmojiSticker = ({ imageSize, stickerSource }: Props) => {
   const scaleImage = useSharedValue(imageSize);
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
@@ -65,3 +65,5 @@ export default function EmojiSticker({ imageSize, stickerSource }: Props) {
     </GestureDetector>
   );
 }
+
+export default EmojiSticker;

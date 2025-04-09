@@ -1,7 +1,7 @@
 import { View, StyleSheet } from "react-native";
 import { Link, Stack } from "expo-router";
 
-export default function NotFoundScreen() {
+const NotFoundScreen = () => {
   return (
     <>
       <Stack.Screen options={{ title: "Oops! Not Found" }} />
@@ -28,3 +28,5 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 });
+
+export default NotFoundScreen;

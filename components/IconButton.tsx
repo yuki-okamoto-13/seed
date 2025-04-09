@@ -7,7 +7,7 @@ type Props = {
   onPress: () => void;
 };
 
-export default function IconButton({ icon, label, onPress }: Props) {
+const IconButton = ({ icon, label, onPress }: Props) => {
   return (
     <Pressable style={styles.iconButton} onPress={onPress}>
       <MaterialIcons name={icon} size={24} color="#fff" />
@@ -26,3 +26,5 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
 });
+
+export default IconButton;

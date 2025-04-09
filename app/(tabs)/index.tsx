@@ -16,7 +16,7 @@ import EmojiSticker from "@/components/EmojiSticker";
 
 const PlaceholderImage = require("@/assets/images/background-image.png");
 
-export default function Index() {
+const Index = () => {
   const [selectedImage, setSelectedImage] = useState<string | undefined>(
     undefined
   );
@@ -142,3 +142,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
 });
+
+export default Index;

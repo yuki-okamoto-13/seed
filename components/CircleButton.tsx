@@ -5,7 +5,7 @@ type Props = {
   onPress: () => void;
 };
 
-export default function CircleButton({ onPress }: Props) {
+const CircleButton = ({ onPress }: Props) => {
   return (
     <View style={styles.circleButtonContainer}>
       <Pressable style={styles.circleButton} onPress={onPress}>
@@ -33,3 +33,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
 });
+
+export default CircleButton;
